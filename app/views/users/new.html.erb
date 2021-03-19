@@ -27,3 +27,16 @@
 <%= submit_tag("create") %>
 <% end %>
 -->
+
+<%= form_with model: @user do |form| %>
+<%= form.label :username, "username"%>
+<%= form.text_field :username %>
+<br/>
+<%= form.label :email, "email"%>
+<%= form.email_field :email %>
+<br/>
+<%= form.label :password, "password"%>
+<%= form.password_field :password %>
+<br/>
+<%= form.submit%>
+<%end%>
