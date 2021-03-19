@@ -1,0 +1,14 @@
+<h1>new user</h1>
+
+<%= form_with(model: @user) do |form| %>
+<%= form.label :username, "username"%>
+<%= form.text_field :username %>
+<br/>
+<%= form.label :email, "email"%>
+<%= form.text_field :email %>
+<br/>
+<%= form.label :password, "password"%>
+<%= form.text_field :password %>
+<br/>
+<%= form.submit %>
+<%end%>
