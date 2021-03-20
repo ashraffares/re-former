@@ -1,70 +1,38 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## search page
-![cover](https://user-images.githubusercontent.com/37639594/106750098-10211900-6630-11eb-9303-7649cfffc740.png)
+# Active-record
 
+![Capture1](https://www.awesomescreenshot.com/image/6735365?key=fab5f83e8e1b53936c8d2d5a4f7b3178)
 
-this is an e-commerce site with only two pages the main page and search page it's basically an instruments shop.
+## Description
+This program implements a basic forms  in ruby on rails useing form helper and validation the form serve the user model
 
-## Design owner
-- Mohammed Awad
+Additional description about the project and its features.
 
 ## Built With
+- Ruby on Rails
 
-- HTML5
-- CSS
-- Media querry
-- bootstrap
+## Author1
+- GitHub: [@githubhandle](https://github.com/ashraffares/http-ashraffares.github.io-)
+- Twitter: [@twitterhandle](https://twitter.com/Fares09301164)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/fares-ashraf-382a35176/)
 
-
-## Live Demo
-https://ashraffares.github.io/week4pro/
-
-
-### Prerequisites
-Knowledge about HTML and CSS.
-HTML Semantic elements.
-CSS flex property.
-CSS grid property.
-Media querry
+## Author2
+- GitHub: [@githubhandle](https://github.com/nganifaith)
+- Twitter: [@twitterhandle](https://twitter.com/Bright_Ngani)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ngani-faith/)
 
 
-
-
-## Authors
-
-👤 **Fares Ashraf** 
-
-- twitter:https://twitter.com/Fares09301164
-- GitHub: https://github.com/ashraffares/http-ashraffares.github.io-
-- linkedin:https://www.linkedin.com/in/fares-ashraf-382a35176/
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-- Clone this repository with: git clone ```https://github.com/ashraffares/week4pro.git``` using your terminal or command line.
-- Change to the project directory by entering : <br>
-```cd NYTproject``` in the terminal .
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](issues/).
+To get a local copy of the repository please run the following commands on your terminal:
+- open terminal
+- $ git clone 'https://github.com/ashraffares/re-former.git'
+- cd into forms
+- cd into re-former
+- run bundle install
+- rails db:migrate
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
+Give a ⭐️ if you like this project!!
