@@ -2,15 +2,16 @@
 
 # Active-record
 
-![Capture1](https://www.awesomescreenshot.com/image/6735365?key=fab5f83e8e1b53936c8d2d5a4f7b3178)
+![Capture1](https://www.awesomescreenshot.com/image/6736010?key=9fff398efe390b98472d3e07edae7103)
 
 ## Description
-This program implements a basic forms  in ruby on rails useing form helper and validation the form serve the user model
+This program implements a basic forms  in ruby on rails useing form helper and validation the form serve the user model 
 
 Additional description about the project and its features.
 
 ## Built With
 - Ruby on Rails
+
 
 ## Author1
 - GitHub: [@githubhandle](https://github.com/ashraffares/http-ashraffares.github.io-)
@@ -32,6 +33,8 @@ To get a local copy of the repository please run the following commands on your 
 - cd into re-former
 - run bundle install
 - rails db:migrate
+- rails s
+- go to 'http://localhost:3000/users'
 
 ## Show your support
 

@@ -19,18 +19,19 @@
   <div><%= submit_tag 'Save' %></div>
 <% end %>
 -->
-<div class="container">
-<div class="col-6 mx-auto">
+
+<div class="container w-50">
+<br/>
+<br/>
 <%= form_with model: @user do |form|%>
 <%= form.label :username %>
-<%= form.text_field :username ,class:"form-control", placeholder: "Enter your username" %><br>
+<%= form.text_field :username ,class:"form-control", placeholder: " Username" %><br>
 <%= form.label :email, "E-mail: "%>
-<%= form.text_field :email, class:"form-control",placeholder: "Enter your email"%><br>
+<%= form.text_field :email, class:"form-control",placeholder: "Email"%><br>
 <%= form.label :password, "Password: "%>
 <%= form.password_field :password,class:"form-control" %><br/>
-<%= form.submit "Submit",class:" btn btn-info"%>
+<%= form.submit "Submit",class:" btn btn-primary"%>
 <% end %>
-</div>
 </div>
 
 

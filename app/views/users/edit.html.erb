@@ -1,21 +1,13 @@
-<h1> WELCOME TO WIKI PAGE</h1>
+<div class="container w-50">
+<h1> Edit User: <%= @user.username %></h1>
 <%= form_with model: @user do |form| %>
   <%= form.label :username, "Username: "%>
-  <%= form.text_field :username, placeholder: "arikarim@gmail.com" %><br>
+  <%= form.text_field :username,class:"form-control"  %><br>
   <%= form.label :email, "E-mail: "%>
-  <%= form.text_field :email%><br>
+  <%= form.text_field :email,class:"form-control" %><br>
   <%= form.label :password, "Password: "%>
-  <%= form.password_field :password %>
-  <%= form.submit "Submit"%>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this post from being saved:</h2>
-
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%= form.password_field :password,class:"form-control"  %>
+  <br/>
+  <%= form.submit "Submit",class:'btn btn-primary'%>
 <% end %>
+</div>
