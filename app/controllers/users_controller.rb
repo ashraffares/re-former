@@ -1,15 +1,14 @@
 class UsersController < ApplicationController
   def new
-    @user = User.new 
+    @user = User.new
   end
 
-  def show; end
-
-  def edit
+  def show
+    @user = User.find(params[:id])
   end
 
   def create
-    @user = User.new(username: params[:username], email: params[:email], password: params[:password])
+    @user = User.new(user_params)
 
     if @user.save
       redirect_to new_user_path
@@ -18,26 +17,24 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit
+    @user = User.find(params[:id])
+  end
+
   def update
-    respond_to do |format|
-      if @article.update(article_params)
-        format.html { redirect_to @article, notice: 'Article was successfully updated.' }
-        format.json { render :show, status: :ok, location: @article }
-      else
-        format.html { render :edit, status: :unprocessable_entity }
-        format.json { render json: @article.errors, status: :unprocessable_entity }
-      end
+    @user = User.find(params[:id])
+
+    if @user.update(user_params)
+      p @user.errors
+      redirect_to edit_user_path(@user)
+    else
+      render :edit
     end
   end
 
   private
 
   def user_params
-    params.require(:users).permit(:username, :email, :password)
-  end
-
-  
-  def set_user
-    @article = User.find(params[:id])
+    params.require(:user).permit(:username, :email, :password)
   end
 end
