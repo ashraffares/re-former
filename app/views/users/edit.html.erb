@@ -1,13 +1,12 @@
+
 <div class="container w-50">
+
+  <% if @user.errors.full_messages.any? %>
+    <% @user.errors.full_messages.each do |error_message| %>
+      <%= error_message if @user.errors.full_messages.first == error_message %> <br />
+    <% end %>
+  <% end %>
+<div>
 <h1> Edit User: <%= @user.username %></h1>
-<%= form_with model: @user do |form| %>
-  <%= form.label :username, "Username: "%>
-  <%= form.text_field :username,class:"form-control"  %><br>
-  <%= form.label :email, "E-mail: "%>
-  <%= form.text_field :email,class:"form-control" %><br>
-  <%= form.label :password, "Password: "%>
-  <%= form.password_field :password,class:"form-control"  %>
-  <br/>
-  <%= form.submit "Submit",class:'btn btn-primary'%>
-<% end %>
+  <%= render "users/form"%>
 </div>

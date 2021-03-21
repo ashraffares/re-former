@@ -1,5 +1,11 @@
 
+
 <div class="container w-50">
+    <% if @user.errors.full_messages.any? %>
+    <% @user.errors.full_messages.each do |error_message| %>
+        <%= error_message if @user.errors.full_messages.first == error_message %> <br />
+    <% end %>
+    <% end %>
     <table class="table table-striped m-5">
         <thead class='table-dark'>
             <tr>
